@@ -6,7 +6,7 @@ const AddToCart = ({ id }) => {
   const [loggedIn, setLoggedIn] = createSignal(false);
 
   createEffect(() => {
-    return jwt.subscribe((value) => setLoggedIn(Boolean(value)));
+    jwt.subscribe((value) => setLoggedIn(Boolean(value)));
   });
 
   return (

@@ -53,7 +53,8 @@ module.exports = (_, argv) => ({
       exposes: {
         './cart': './src/cart',
         './Login': './src/Login',
-        './MiniCart': './src/MiniCart'
+        './MiniCart': './src/MiniCart',
+        './CartContent': './src/CartContent',
       },
       shared: {
         ...deps,

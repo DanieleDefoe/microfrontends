@@ -9,7 +9,7 @@ const MiniCart = () => {
 
   useEffect(() => {
     setItems(cart?.value?.cartItems);
-    return cart.subscribe((c) => {
+    cart.subscribe((c) => {
       setItems(c?.cartItems);
     });
   }, []);
@@ -19,7 +19,7 @@ const MiniCart = () => {
   return (
     <>
       <span onClick={() => setShowCart((prev) => !prev)} id="showcart__span">
-        <i className="ri-shopping-cart-2-fill text-2xl" id="span" />
+        <i className="ri-shopping-cart-2-fill text-2xl" id="showcart" />
         {items.length}
       </span>
       {showCart && (

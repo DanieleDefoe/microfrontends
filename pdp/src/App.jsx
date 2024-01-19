@@ -42,4 +42,4 @@ const router = createBrowserRouter(routes);
 
 const Provider = () => <RouterProvider router={router} />;
 
-ReactDOM.createRoot(document.getElementById('app')).render(<Provider />);
+export default Provider;

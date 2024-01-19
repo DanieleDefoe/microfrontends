@@ -64,7 +64,7 @@ export const useLoggedIn = () => {
 
   useEffect(() => {
     setLoggedIn(Boolean(jwt.value))
-    return jwt.subscribe((c) => {
+    jwt.subscribe((c) => {
       setLoggedIn(Boolean(c))
     })
   }, [])
